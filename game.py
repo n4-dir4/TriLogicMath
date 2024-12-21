@@ -161,7 +161,7 @@ class Game(object):
         """ These will set num1,num2,result for division """
         divisor = random.randint(1,12)
         dividend = divisor * random.randint(1,12)
-        quotient = dividend / divisor
+        quotient = dividend // divisor
         self.problem["num1"] = dividend
         self.problem["num2"] = divisor
         self.problem["result"] = quotient
